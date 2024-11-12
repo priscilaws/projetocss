@@ -1,17 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-color: rgb(24, 17, 29);
+    color: whitesmoke;
+    font-family:"Metal Mania", system-ui;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
 }
 
 header {
-        font-family: "Prompt", serif;
-        font-weight: 700;
-        font-style: normal;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-body {
-    font-family: "Kanit", serif;
-    font-weight: 400;
-    font-style: normal;
+#title {
+    flex-direction: column;
+    line-height: 8px;
+}
+
+li {
+    display: inline;
+    margin: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 8px;
+    font-family: "Poppins", sans-serif;
+}
+
+span {
+    color: rgb(105, 8, 84);
+    font-family: "Metal Mania", system-ui;
 }
