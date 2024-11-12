@@ -7,6 +7,10 @@ body {
     padding: 16px;
 }
 
+h1 {
+    margin: 0;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -16,7 +20,7 @@ header {
 
 #title {
     flex-direction: column;
-    line-height: 8px;
+    /* line-height: 8px; */
 }
 
 li {
@@ -26,24 +30,80 @@ li {
     font-weight: 300;;
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(105, 8, 84);
+    transition: 0.3s all;
+}
+
 main {
     display: flex;
     flex-direction: row;
     margin-top: 36px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    flex: 1 1 auto;
 }
 
 p {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
+    /* line-height: 16px; */
 }
 
 h2 {
     font-size: 48px;
-    line-height: 8px;
+    /* line-height: 20px; */
     font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 0;
 }
 
 span {
     color: rgb(105, 8, 84);
     font-family: "Metal Mania", system-ui;
+    font-size: 80px;
+}
+
+img {
+    padding: 16px;
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    clip-path: polygon(18% 0, 80% 0%, 68% 100%, 30% 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    width: 40%;
+    background-color: rgb(105, 8, 84);
+    color: whitesmoke;
+    font-family:"Poppins", sans-serif;
+}
+
+button:hover {
+    background-color: rgb(134, 20, 110);
 }
